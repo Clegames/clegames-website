@@ -283,7 +283,8 @@
     border-radius: 20px;
     border: 1px solid var(--border);
   }
-  .rnd-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; }
+  .rnd-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .rnd-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; min-width: 280px; }
   .rnd-table th {
     color: var(--muted);
     font-size: 0.67rem;
@@ -294,6 +295,7 @@
     text-align: right;
     border-bottom: 1px solid var(--border);
     background: var(--bg3);
+    white-space: nowrap;
   }
   .rnd-table th:first-child { text-align: left; }
   .rnd-table td {
@@ -301,6 +303,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.03);
     color: var(--text);
     text-align: right;
+    white-space: nowrap;
   }
   .rnd-table td:first-child { text-align: left; color: var(--muted); }
   .rnd-table tr:last-child td { border-bottom: none; }
@@ -1028,10 +1031,12 @@ RANDOM_DATA.forEach(d => {
       <span style="font-size:0.8rem;font-weight:600;color:${d.color}">${d.tier}</span>
       <span class="rnd-count">${d.count} random effect${d.count>1?'s':''}</span>
     </div>
+    <div class="rnd-table-wrap">
     <table class="rnd-table">
       <thead><tr><th>Effect</th><th>Chance</th><th>Min</th><th>Max</th></tr></thead>
       <tbody>${rows}</tbody>
-    </table>`;
+    </table>
+    </div>`;
   grid.appendChild(card);
 });
 </script>
