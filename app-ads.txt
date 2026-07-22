@@ -45,7 +45,6 @@ appnexus.com,15980,RESELLER,f5ab79cb980f11d1
 xandr.com, 13291, RESELLER
 Contextweb.com, 563285, RESELLER, 89ff185a4c4e857c
 app-stock.com, 343264, RESELLER
-rubiconproject.com, 25064, RESELLER, 0bfd66d529a55807
 smartadserver.com, 4190, RESELLER
 triplelift.com, 12240, RESELLER, 6c33edb13117fd86
 betweendigital.com, 44180, Reseller
