@@ -3902,3 +3902,4 @@ xandr.com,13955,RESELLER,f5ab79cb980f11d1
 zetaglobal.net,512,RESELLER
 zmaticoo.com,5135199,RESELLER
 google.com, pub-6591726594385567, DIRECT, f08c47fec0942fa0
+vungle.com, 61654b83143abe0017576a58, DIRECT, c107d686becd2d77
